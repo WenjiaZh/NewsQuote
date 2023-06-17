@@ -182,8 +182,7 @@ for i in range(len(dataset_entity_in)):
 
 with open(file_path+"dataset_pronoun_in.json",'w') as f:
     json.dump(dataset_pronoun_in,f)
-print(len(dataset_pronoun_in))   #135767
-
+print(len(dataset_pronoun_in))   #135767  
 
 #Filter the dataset by subject's DBpedia link
 dataset_elink = []
