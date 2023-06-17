@@ -7,7 +7,7 @@ Wenjia Zhang, Lin Gui, Rob Procter, Yulan He
 To enhance the ability to find credible evidence in news articles, we propose a novel task of expert recommendation, which aims to identify trustworthy experts on a specific news topic. To achieve the aim, we describe the construction of a novel NewsQuote dataset consisting of 24,031 quote-speaker pairs that appeared on a COVID-19 news corpus. We demonstrate an automatic pipeline for speaker and quote extraction via a BERT-based Question Answering model. Then, we formulate expert recommendations as document retrieval task by retrieving relevant quotes first as an intermediate step for expert identification, and expert retrieval by directly retrieving sources based on the probability of a query conditional on a candidate expert. Experimental results on NewsQuote show that document retrieval is more effective in identifying relevant experts for a given news topic compared to expert retrieval.
 
 
-<img src="[https://github.com/WenjiaZh/NewsQuote/blob/main/quoteextract.pdf](https://github.com/WenjiaZh/NewsQuote/blob/main/expranking.pdf)" width="500">
+<img src="https://github.com/WenjiaZh/NewsQuote/blob/main/quoteextract.pdf" width="500">
 Plot(a) describes the QA pipeline, the sequence labelling and the Rule-based Quota Annotator used for quote-source extraction. 
 
 <img src="https://github.com/WenjiaZh/NewsQuote/blob/main/expranking.pdf" width="500">
