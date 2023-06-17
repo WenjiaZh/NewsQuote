@@ -9,7 +9,6 @@ predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-
 
 print(predictor)
 
-
 file_path = 'data path'
 save_path = 'output path'
 
