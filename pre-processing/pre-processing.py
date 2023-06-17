@@ -228,17 +228,24 @@ with open(file_path + "dataset_elinks_morethan2.json",'w') as f:
     json.dump(dataset_elinks_morethan2,f)
 
 
-#Filter the data by the length of quote.
+#Filter the data by the length of quote and the number of quote marks
 dataset_el_q1_morethan2 = []
 
 for i in range(len(dataset_elinks_morethan2)):
     q1 =  dataset_elinks_morethan2[i]['Quotation1']
     q1_wordcount = len(q1.split())
+    q_count =dataset_elinks_morethan2[i]['Sentence'].count('"')
+    qq_count =dataset_elinks_morethan2[i]['Sentence'].count('”')
     if q1_wordcount > 2:
-        dataset_el_q1_morethan2.append(dataset_elinks_morethan2[i])
+        if q_count % 2 == 0:
+            if qq_count % 2 == 0:
+                dataset_el_q1_morethan2.append(dataset_elinks_morethan2[i])
 
 print('len(dataset_el_q1_morethan2)',len(dataset_el_q1_morethan2))
 print(dataset_el_q1_morethan2[5].keys()) 
 
 with open(file_path + "dataset_el_q1_morethan2.json",'w') as f:
     json.dump(dataset_el_q1_morethan2,f)
+    
+    
+   
